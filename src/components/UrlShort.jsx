@@ -79,7 +79,7 @@ const UrlShort = () => {
       {shortURL && (
         <div className="mt-4">
           <div className="flex items-center space-x-2">
-            <div className="w-full p-2 border border-gray-300 rounded">
+            <div className="w-full p-2 border overflow-auto border-gray-300 rounded">
               <strong>Original URL:</strong> {inputURL}
             </div>
             {/* <input
