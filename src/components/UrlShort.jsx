@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from 'react-toastify';
+import { Link } from "react-router-dom";
 const UrlShort = () => {
   const [inputURL, setInputURL] = useState("");
   const [shortURL, setShortURL] = useState("");
@@ -77,10 +78,10 @@ const UrlShort = () => {
       </form>
 
       {shortURL && (
-        <div className="mt-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-full p-2 border overflow-auto border-gray-300 rounded">
-              <strong>Original URL:</strong> {inputURL}
+        <div className="mt-8  max-w-5xl overflow-auto">
+          <div className="flex items-center  space-x-2">
+            <div className="max-w-xl w-1/2 p-2 border overflow-auto  text-white border-gray-300 rounded">
+             <strong>Original URL:</strong>  <Link to={inputURL}>{inputURL}</Link>
             </div>
             {/* <input
               className="w-full p-2 border border-gray-300 rounded"
@@ -89,9 +90,9 @@ const UrlShort = () => {
               readOnly
             /> */}
 
-            <button to="#" onClick={redirectToOriginal} className="w-1/2 p-2 border border-gray-300 rounded">
-              {shortURL}
-            </button>
+            <Link to={inputURL} onClick={redirectToOriginal} className="w-1/2 p-2 border border-gray-300 rounded">
+            <strong className="text-white">Click Here to Visit:</strong>   {shortURL}
+            </Link>
             <button
               className="bg-green-500 text-white p-2 rounded"
               onClick={handleCopy}
