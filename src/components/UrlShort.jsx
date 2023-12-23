@@ -81,7 +81,7 @@ const UrlShort = () => {
         <div className="mt-8  max-w-5xl overflow-auto">
           <div className="flex items-center  space-x-2">
             <div className="max-w-xl w-1/2 p-2 border overflow-auto  text-white border-gray-300 rounded">
-             <strong>Original URL:</strong>  <Link to={inputURL}>{inputURL}</Link>
+             <strong>Original URL:</strong>  <Link to={inputURL} className="hover:text-blue-400">{inputURL}</Link>
             </div>
             {/* <input
               className="w-full p-2 border border-gray-300 rounded"
@@ -90,9 +90,9 @@ const UrlShort = () => {
               readOnly
             /> */}
 
-            <Link to={inputURL} onClick={redirectToOriginal} className="w-1/2 p-2 border border-gray-300 rounded">
-            <strong className="text-white">Click Here to Visit:</strong>   {shortURL}
-            </Link>
+            <div to={inputURL} onClick={redirectToOriginal} className="w-1/2 p-2 border border-gray-300 rounded">
+            <strong className="text-white pt-2">Click Here to Visit:</strong><br/><Link to={inputURL} className="text-green-400 hover:text-blue-400">{shortURL}</Link>   
+            </div>
             <button
               className="bg-green-500 text-white p-2 rounded"
               onClick={handleCopy}
