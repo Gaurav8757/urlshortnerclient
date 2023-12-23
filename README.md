@@ -31,8 +31,29 @@ npm run dev
 
 
 # 2. Screenshot:
-1.Landing Page
+1. Landing Page:
+   
 
+
+![landing page](https://github.com/Gaurav8757/urlshortnerclient/assets/94515205/ce8ada69-6886-448a-8a53-c1422b036a85)
+
+2. Register Page:
+
+   
+
+![signup](https://github.com/Gaurav8757/urlshortnerclient/assets/94515205/9db42362-c465-4167-96ac-d710013715b4)
+
+
+3. Login Page:
+
+   
+![sigiin](https://github.com/Gaurav8757/urlshortnerclient/assets/94515205/73212668-84ee-481d-807d-62ae5e27a927)
+
+4. Url Shortner Page with Function:
+
+   
+
+![react-shortner](https://github.com/Gaurav8757/urlshortnerclient/assets/94515205/478704f9-d4d0-4e65-be0b-307f9b7d0b5f)
 
 
 
