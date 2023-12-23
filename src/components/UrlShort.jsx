@@ -65,7 +65,7 @@ console.log(response);
             placeholder="Enter a URL"
           />
           <button className="bg-blue-500 text-white p-2 rounded" type="submit">
-            Shorten
+            Generate
           </button>
         </div>
         {!isValidURL && (
